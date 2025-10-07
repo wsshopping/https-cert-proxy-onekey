@@ -26,10 +26,10 @@ sudo ./setup-https-nginx.sh <域名> <反向代理端口> [HTTPS端口]
 ### 示例
 ```bash
 # 基本用法
-sudo ./setup-https-nginx.sh bot1.utcwin.com 50088
+sudo ./setup-https-nginx.sh 111.com.cn 50088
 
 # 指定HTTPS端口
-sudo ./setup-https-nginx.sh bot1.utcwin.com 50088 5008
+sudo ./setup-https-nginx.sh 111.com.cn 50088 5008
 ```
 
 ## 配置步骤总结
@@ -40,12 +40,12 @@ sudo ./setup-https-nginx.sh bot1.utcwin.com 50088 5008
 
 ### 2. 运行脚本
 ```bash
-sudo ./setup-https-nginx.sh bot1.utcwin.com 50088 5008
+sudo ./setup-https-nginx.sh 111.com.cn 50088 5008
 ```
 
 ### 3. 设置 Telegram Webhook
 ```bash
-curl -F "url=https://bot1.utcwin.com:5008" https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook
+curl -F "url=https://111.com.cn:5008" https://api.telegram.org/bot<YOUR_BOT_TOKEN>/setWebhook
 ```
 
 ### 4. 验证配置
